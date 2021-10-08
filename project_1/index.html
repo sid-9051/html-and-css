@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghar ka khana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <script>
+        function setColor(btn, color){
+            var count=1;
+            var property = document.getElementById(btn);
+            if (count == 0){
+                property.style.backgroundColor = "#FFFFFF"
+                count=1;        
+            }
+            else{
+                property.style.backgroundColor = "#7FFF00"
+                count=0;
+            }
+        
+        }
+        </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="pic2.jpg" height="50px" alt="Ghar ka khanaa">
+
+        </div>
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#">Order now</a></li>
+            <li class="item"><a href="#contact us">Contact us</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">welcome to ghar ka khanaa</h1>
+        <p>No more oily foods 
+        </p>
+        <p>Ghar ka khanna,maa k hath ka khana
+        </p>
+        <button class="btn">Order now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="biryani.jpg" alt="our services">
+                <h2 class="h-secondary center">Non-Veg</h2>
+                <p class="center">
+                    For all the Non-Veg lovers.
+                    Here we provide fresh non-veg home-cooked food at the most afordable price.
+                    <br>
+                    <br>
+                    <strong>FREE delivery if ordered <i>first time</i></strong>
+                </p>
+            </div>
+            <div class="box">
+                <img src="veg1.jpg" alt="our services">
+                <h2 class="h-secondary center">Veg food</h2>
+                <p class="center">
+                    For all the Veg lovers.
+                    Here we provide fresh Veg home-cooked food at the most afordable price.
+                    <br>
+                    <br>
+                    <strong>FREE delivery if ordered <i>first time</i></strong>
+                </p>
+            </div>
+            <div class="box">
+                <img src="vegan1.jpg" alt="our services">
+                <h2 class="h-secondary center">Order food</h2>
+                <p class="center">
+                    For all the Vegan lovers.
+                    Here we provide fresh vegan home-cooked food at the most afordable price.
+                    <br>
+                    <br>
+                    <strong>FREE delivery if ordered <i>first time</i></strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="Phone no">Phone no.:</label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your Phone number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="button" id="button" style="color:red" onclick="setColor('button', '#101010')";/>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="footer">
+        Copyright &copy; www.gharkakhanna.com. All rights reserved.
+    </div>
+
+</body>
+
+</html>
